@@ -1,0 +1,12 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  ./vendor/doctrine/orm/doctrine-mapping.xsd">
+    <embeddable name="Brick\Money\Currency">
+        <field name="currencyCode" column="code" length="3">
+            <options>
+                <option name="default">EUR</option>
+            </options>
+        </field>
+    </embeddable>
+</doctrine-mapping>

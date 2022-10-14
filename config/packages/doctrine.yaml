@@ -16,6 +16,12 @@ doctrine:
                 prefix: 'App\Entity'
                 alias: App
 
+            # !!! loading 'library_money' config results in error, commenting this part no error
+            library_money:
+                type: 'xml'
+                dir: '%kernel.project_dir%/config/doctrine/library/money'
+                prefix: 'Brick\Money'
+
 when@test:
     doctrine:
         dbal:
